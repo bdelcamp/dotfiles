@@ -2,6 +2,8 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+##### REQUIRES i3-gaps TO BE INSTALLED IN ORDER TO WORK PROPERLY
+
 set $mod Mod4
 
 # ------------------------FONT---------------------------
