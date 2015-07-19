@@ -1,0 +1,54 @@
+! urxvt
+
+URxvt*font:  xft:tewi:pixelsize=8
+URxvt*depth:                32
+URxvt*background:            [85]#101010
+URxvt*foreground:            [100]#d0d0d0
+URxvt*borderless: 1
+URxvt*scrollBar:            false
+URxvt*saveLines:  5000
+URxvt*termName:    rxvt-unicode
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/google-chrome-stable
+URxvt.matcher.button: 1
+
+
+
+! special
+URxvt.foreground:   #777777
+URxvt.background:   [95]#ffffff
+
+! black
+URxvt.color0:       #555555
+URxvt.color8:       #555555
+
+! red
+URxvt.color1:       #d15d5c
+URxvt.color9:       #ff7270
+
+! green
+URxvt.color2:       #9eb26b
+URxvt.color10:      #bfd883
+
+! yellow
+URxvt.color3:       #cf8f3d
+URxvt.color11:      #ffb04b
+
+! blue
+URxvt.color4:       #529cc8
+URxvt.color12:      #68c7ff
+
+! magenta
+URxvt.color5:       #b260cb
+URxvt.color13:      #e079ff
+
+! cyan
+URxvt.color6:       #53c8c1
+URxvt.color14:      #6afff7
+
+! white
+URxvt.color7:       #CCCCCC
+URxvt.color15:      #CCCCCC
+
+Xft.dpi:	    96
