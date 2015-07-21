@@ -126,15 +126,15 @@ tray_output none
                 focused_workspace  #eeeeee #eeeeee #767E8A
                 active_workspace   #eeeeee #eeeeee #767E8A
                 inactive_workspace #eeeeee #eeeeee #51C4D4
-                urgent_workspace   #eeeeee #eeeeee #990000
+                urgent_workspace   #eeeeee #eeeeee #EA7878
         }
 }
 
 #color			border  backgr. text	indicator
-client.focused 		#51C4D4 #51C4D4 #ffffff #73E6F6
-client.focused_inactive #767E8A #767E8A #888888 #444444
-client.unfocused 	#767E8A #767E8A #888888 #444444
-client.urgent 		#2f343a #900000 #ffffff #900000
+client.focused 		#1BA39C #1BA39C #ffffff #36D7B7
+client.focused_inactive #767E8A #767E8A #aaaaaa #444444
+client.unfocused 	#767E8A #767E8A #aaaaaa #444444
+client.urgent 		#EA7878 #EA7878 #ffffff #EA7878
 
 #startup applications
 
@@ -169,7 +169,7 @@ for_window [class="^.*"] border pixel 3
 #smart_borders no_gaps
 #smart_gaps on
 gaps inner 8
-gaps outer 5
+gaps outer 0
 
 # Audio Controls
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
