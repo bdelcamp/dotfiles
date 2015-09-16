@@ -84,7 +84,7 @@ set tabstop=4
 
 " colorscheme
 let g:hybrid_use_Xresources = 1
-set t_Co=256
+" set t_Co=256
 colorscheme hybrid
 
 " powerline
