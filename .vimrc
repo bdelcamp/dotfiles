@@ -36,7 +36,7 @@ Plugin 'gmarik/Vundle.vim'
 " syntax
 Plugin 'rstacruz/sparkup'
 Plugin 'docunext/closetag.vim'
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
@@ -84,7 +84,6 @@ set tabstop=4
 
 " colorscheme
 let g:hybrid_use_Xresources = 1
-set t_Co=256
 colorscheme hybrid
 
 " powerline
