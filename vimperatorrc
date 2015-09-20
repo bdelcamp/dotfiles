@@ -1,3 +1,5 @@
+" vimperator
+
 nnoremap K <gt>
 nnoremap J <gT>
 set gui=none
