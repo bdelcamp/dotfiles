@@ -1,0 +1,22 @@
+[Default Applications]
+image/gif=sxiv.desktop
+image/jpeg=sxiv.desktop
+image/png=sxiv.desktop
+image/svg+xml=sxiv.desktop
+text/plain=leafpad.desktop
+text/html=leafpad.desktop
+application/xml=leafpad.desktop
+application/javascript=leafpad.desktop
+x-directory/normal=pcmanfm.desktop
+x-directory/gnome-default-handler=pcmanfm.desktop
+inode/directory=pcmanfm.desktop
+application/pdf=mupdf.desktop
+video/webm=mplayer.desktop
+video/x-ms-asf=mplayer.desktop
+video/x-theora+ogg=mplayer.desktop
+
+[Removed Applications]
+audio/mpeg=mplayer.desktop
+audio/mp4=mplayer.desktop
+audio/x-wav=mplayer.desktop
+audio/aac=mplayer.desktop
