@@ -1,3 +1,5 @@
+" it is necessary to compile the YouCompleteMe extension
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
