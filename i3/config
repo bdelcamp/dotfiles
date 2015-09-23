@@ -134,14 +134,14 @@ bar {
 	tray_output none
 	separator_symbol " "
         colors {
-                background #222222
+                background #333333
                 separator  #666666
                 statusline #eeeeee
 
-                focused_workspace  #222222 #222222 #eeeeee
-                active_workspace   #222222 #222222 #999999
-                inactive_workspace #222222 #222222 #666666
-                urgent_workspace   #222222 #222222 #CC6666
+                focused_workspace  #333333 #333333 #eeeeee
+                active_workspace   #333333 #333333 #999999
+                inactive_workspace #333333 #333333 #666666
+                urgent_workspace   #333333 #333333 #CC6666
         }
 }
 
@@ -160,8 +160,8 @@ client.urgent 		#CC6666 #CC6666 #ffffff #CC6666
 #######################################################################
 
 for_window [class="^.*"] border pixel 3
-smart_borders no_gaps
-smart_gaps on
+# smart_borders no_gaps
+# smart_gaps on
 gaps inner 7
 gaps outer 3
 

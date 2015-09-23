@@ -13,9 +13,14 @@ fi
 
 synclient TouchpadOff=1 &
 urxvtd &
+# note - unclutter is using the unclutter-xfixes-git package from the AUR
+unclutter &
+redshift & 
 xrdb -load ~/.Xresources &
 xmodmap ~/.capswap &
 nitrogen --restore &
+mpd &
 compton & 
 
+# exec dwm
 exec i3
