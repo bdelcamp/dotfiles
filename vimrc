@@ -108,3 +108,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 set cursorline
 hi CursorLineNr ctermfg=grey
 hi CursorLine ctermbg=none
+
+" YCM
+let g:ycm_autoclose_preview_window_after_completion=1
