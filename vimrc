@@ -1,4 +1,4 @@
-set nocompatible              " be iMproved, required
+set nocompatible              " be iMproved, required"
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -37,10 +37,13 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'rstacruz/sparkup'
 Plugin 'docunext/closetag.vim'
 Plugin 'Valloric/YouCompleteMe'
+Bundle 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'Raimondi/delimitMate'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 	" syntax - languages
 	" Plugin ''
 
@@ -49,6 +52,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
 " interface
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
@@ -83,6 +87,7 @@ set nu
 set tabstop=4
 
 " colorscheme
+" set t_Co=256
 let g:hybrid_use_Xresources = 1
 colorscheme hybrid
 
@@ -94,10 +99,9 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 
 " keybinds
-map <C-x> :bd<CR>
-map <C-k> :bp<CR>
-map <C-j> :bn<CR>
-map <C-l> :wincmd p<CR>
+map <S-x> :bd<CR>
+map <S-k> :bp<CR>
+map <S-j> :bn<CR>
 map <C-n> :NERDTreeToggle<CR>
 let g:multi_cursor_next_key='<C-d>'
 
@@ -111,3 +115,14 @@ hi CursorLine ctermbg=none
 
 " YCM
 let g:ycm_autoclose_preview_window_after_completion=1
+
+" utilsnipso
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"

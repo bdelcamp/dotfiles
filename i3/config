@@ -151,8 +151,8 @@ bar {
 
 #color			border  backgr. text	indicator
 client.focused 		#B5BD68 #B5BD68 #ffffff #B5BD68
-client.focused_inactive #222222 #222222 #888888 #222222
-client.unfocused 	#222222 #222222 #888888 #222222
+client.focused_inactive #1c1c1c #1c1c1c #888888 #1c1c1c
+client.unfocused 	#1c1c1c #1c1c1c #888888 #1c1c1c
 client.urgent 		#CC6666 #CC6666 #ffffff #CC6666
 
 #######################################################################
