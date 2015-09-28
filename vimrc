@@ -88,6 +88,7 @@ set tabstop=4
 
 " colorscheme
 " set t_Co=256
+" NOTE: set t_Co=256 should be turned on if tmux is used. also use tmux -2 as the command for tmux
 let g:hybrid_use_Xresources = 1
 colorscheme hybrid
 
