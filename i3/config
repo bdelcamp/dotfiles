@@ -126,7 +126,6 @@ bindsym $mod+Shift+e mode "$mode_system"
 #                                 bar                                 #
 #######################################################################
 
-
 bar {
         height 20
 	font pango:drift,tewi 8
@@ -151,8 +150,8 @@ bar {
 
 #color			border  backgr. text	indicator
 client.focused 		#B5BD68 #B5BD68 #ffffff #B5BD68
-client.focused_inactive #1c1c1c #1c1c1c #888888 #1c1c1c
-client.unfocused 	#1c1c1c #1c1c1c #888888 #1c1c1c
+client.focused_inactive #333333 #333333 #888888 #333333
+client.unfocused 	#333333 #333333 #888888 #333333
 client.urgent 		#CC6666 #CC6666 #ffffff #CC6666
 
 #######################################################################
@@ -160,8 +159,8 @@ client.urgent 		#CC6666 #CC6666 #ffffff #CC6666
 #######################################################################
 
 for_window [class="^.*"] border pixel 3
-# smart_borders no_gaps
-# smart_gaps on
+smart_borders no_gaps
+smart_gaps on
 gaps inner 7
 gaps outer 3
 

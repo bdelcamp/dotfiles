@@ -52,12 +52,12 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
 " interface
-Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mhinz/vim-startify'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " colorschemes
 Plugin 'w0ng/vim-hybrid'
@@ -87,7 +87,8 @@ set nu
 set tabstop=4
 
 " colorscheme
-" set t_Co=256
+set t_Co=256
+set background=dark
 let g:hybrid_use_Xresources = 1
 colorscheme hybrid
 
@@ -120,8 +121,6 @@ let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
-
-
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
