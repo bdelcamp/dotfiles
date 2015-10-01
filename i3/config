@@ -19,7 +19,7 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvtc
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+q kill
-bindsym $mod+d exec dmenu_run -nf '#888888' -nb '#222222' -sf '#B5BD68' -sb '#222222'
+bindsym $mod+d exec dmenu_run -nf '#666666' -nb '#333333' -sf '#B5BD68' -sb '#333333'
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
