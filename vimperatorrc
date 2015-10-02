@@ -2,7 +2,7 @@
 
 nnoremap K <gt>
 nnoremap J <gT>
-set gui=tabs
+set gui=none
 set animations
 colorscheme indigo
 set hintchars=hjklasdfgyuiopqwertnmzxcvb

@@ -19,7 +19,8 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvtc
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+q kill
-bindsym $mod+d exec dmenu_run -nf '#666666' -nb '#333333' -sf '#B5BD68' -sb '#333333'
+# bindsym $mod+d exec dmenu_run -nf '#666666' -nb '#222222' -sf '#B5BD68' -sb '#222222'
+bindsym $mod+space exec rofi -show run 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
@@ -150,8 +151,8 @@ bar {
 
 #color			border  backgr. text	indicator
 client.focused 		#B5BD68 #B5BD68 #ffffff #B5BD68
-client.focused_inactive #333333 #333333 #888888 #333333
-client.unfocused 	#333333 #333333 #888888 #333333
+client.focused_inactive #131313 #131313 #888888 #131313
+client.unfocused 	#131313 #131313 #888888 #131313
 client.urgent 		#CC6666 #CC6666 #ffffff #CC6666
 
 #######################################################################

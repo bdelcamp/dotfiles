@@ -53,3 +53,24 @@ URxvt*background: [95]#131313
 ! white
 *color7: #707880
 *color15: #C5C8C6
+
+
+! ROFI
+rofi.opacity: 80
+rofi.lines: 5
+rofi.width: 100
+rofi.separator-style: none
+rofi.fixed_num_lines: 1
+rofi.line-margin: 0
+rofi.padding: 500
+rofi.hide-scrollbar: true
+rofi.terminal: urxvtc
+rofi.bw: 0
+rofi.font: tewi 8
+rofi.bg: default
+rofi.fg: #EEEEEE
+rofi.eh: 1
+rofi.hlbg: default
+rofi.hlfg: #B5BD68
+rofi.disable-history: true
+
