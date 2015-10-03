@@ -6,3 +6,11 @@ set gui=none
 set animations
 colorscheme indigo
 set hintchars=hjklasdfgyuiopqwertnmzxcvb
+
+hi CompItem font-family: drift;
+hi CmdLine>* font-family: drift;
+hi CompTitle font-family: drift; background: -moz-linear-gradient(19% 75% 90deg, #2c2c2f, #2a2a2f, #2f2f2f 100%);
+hi Title color: orchid; background: #1c1c1c; font-family:drift;
+hi StatusLine color: #555555; background: transparent; font-family: drift; padding-right: 6px;
+hi CompMsg margin-left: 16px; font-family: drift;
+hi ModeMsg color: #555555; background: #1c1c1c; font-family: drift; padding-left: 4px;

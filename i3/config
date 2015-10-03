@@ -132,6 +132,7 @@ bar {
 	font pango:drift,tewi 8
 	status_command i3blocks -c ~/.i3/i3blocks.conf
 	tray_output none
+	position top
 	separator_symbol " "
         colors {
                 background #333333
@@ -160,8 +161,8 @@ client.urgent 		#CC6666 #CC6666 #ffffff #CC6666
 #######################################################################
 
 for_window [class="^.*"] border pixel 3
-smart_borders no_gaps
-smart_gaps on
+# smart_borders no_gaps
+# smart_gaps on
 gaps inner 7
 gaps outer 3
 
