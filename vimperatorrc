@@ -16,3 +16,4 @@ hi CompMsg margin-left: 16px; font-family: drift;
 hi ModeMsg color: #555555; background: #1c1c1c; font-family: drift; padding-left: 4px;
 hi ErrorMsg color: #ffffff; background: #440000; font-family: drift;
 hi InfoMsg color: #d0d0d0; background: #1c1c1c; font-family: drift;
+hi PromptText color: #d0d0d0; background: transparent; font-family: drift; padding-top: 5px; padding-bottom: 5px;
