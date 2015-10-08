@@ -1,0 +1,45 @@
+# -----------------$HOME/.abcde.conf----------------- #
+#
+# A sample configuration file to convert music cds to
+# MP3, Ogg Vorbis, FLAC
+# using abcde version 2.4.2
+#
+# http://andrews-corner.org/abcde.html
+# minor mods by http://minimalinux.blogspot.com
+# -------------------------------------------------- #
+
+OGGENCODERSYNTAX=oggenc # Specify encoder for Ogg Vorbis
+
+OGGENC=oggenc # Path to Ogg Vorbis encoder
+
+OGGENCOPTS='-q 3' # Options for Ogg Vorbis
+
+OUTPUTTYPE="ogg" # Encode to all 3 formats!
+
+CDROMREADERSYNTAX=cdparanoia
+CDPARANOIA=cdparanoia
+CDPARANOIAOPTS="--never-skip=40"
+
+# Give the location of the CD identification program:
+CDDISCID=cd-discid
+
+OUTPUTDIR="$HOME/Music/abcde/"
+ACTIONS=cddb,playlist,read,encode,tag,move,clean
+OUTPUTFORMAT='${OUTPUT}/${ARTISTFILE}-${ALBUMFILE}/${TRACKNUM}.${TRACKFILE}'
+VAOUTPUTFORMAT='${OUTPUT}/Various-${ALBUMFILE}/${TRACKNUM}.${ARTISTFILE}-${TRACKFILE}'
+ONETRACKOUTPUTFORMAT='${OUTPUT}/${ARTISTFILE}-${ALBUMFILE}/${ALBUMFILE}'
+VAONETRACKOUTPUTFORMAT='${OUTPUT}/Various-${ALBUMFILE}/${ALBUMFILE}'
+
+# Create playlists for single and various-artist encodes. I would suggest
+# commenting these out for single-track encoding.
+PLAYLISTFORMAT='${OUTPUT}/${ARTISTFILE}-${ALBUMFILE}/${ALBUMFILE}.m3u'
+VAPLAYLISTFORMAT='${OUTPUT}/Various-${ALBUMFILE}/${ALBUMFILE}.m3u'
+
+mungefilename ()
+{
+echo "$@" | sed s,:,-,g | tr / _ | tr -d \'\"\?\[:cntrl:\]
+}
+MAXPROCS=1 # Run a few encoders simultaneously
+PADTRACKS=y # Makes tracks 01 02 not 1 2
+EXTRAVERBOSE=n # Useful for debugging
+EJECTCD=n # Please eject cd when finished :-)
