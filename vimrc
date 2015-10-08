@@ -58,6 +58,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mhinz/vim-startify'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'junegunn/goyo.vim'
 
 " colorschemes
 Plugin 'w0ng/vim-hybrid'
@@ -125,3 +126,38 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" Goyo 
+function! s:goyo_enter()
+  " silent !tmux set status off
+  set noshowmode
+  set noshowcmd
+  set scrolloff=999
+  let b:quitting = 0
+  let b:quitting_bang = 0
+  autocmd QuitPre <buffer> let b:quitting = 1
+  cabbrev <buffer> q! let b:quitting_bang = 1 <bar> q!
+  " ...
+endfunction
+
+function! s:goyo_leave()
+  " silent !tmux set status on
+  set showmode
+  set showcmd
+  set scrolloff=5
+  set cursorline
+  hi CursorLineNr ctermfg=grey
+  hi CursorLine ctermbg=none
+  " Quit Vim if this is the only remaining buffer
+  if b:quitting && len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 1
+    if b:quitting_bang
+      qa!
+    else
+      qa
+    endif
+  endif
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+

@@ -54,7 +54,9 @@ URxvt*background: [95]#131313
 *color7: #707880
 *color15: #C5C8C6
 
-
+*colorIT: #87af5f
+*colorBD: #d7d7d7
+*colorUL: #87afd7
 ! ROFI
 rofi.opacity: 85
 /* rofi.lines: 8 */

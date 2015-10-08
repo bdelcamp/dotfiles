@@ -11,12 +11,12 @@ x-directory/normal=pcmanfm.desktop
 x-directory/gnome-default-handler=pcmanfm.desktop
 inode/directory=pcmanfm.desktop
 application/pdf=mupdf.desktop
-video/webm=mplayer.desktop
-video/x-ms-asf=mplayer.desktop
-video/x-theora+ogg=mplayer.desktop
+video/webm=mpv.desktop
+video/x-ms-asf=mpv.desktop
+video/x-theora+ogg=mpv.desktop
 
 [Removed Applications]
-audio/mpeg=mplayer.desktop
-audio/mp4=mplayer.desktop
-audio/x-wav=mplayer.desktop
-audio/aac=mplayer.desktop
+audio/mpeg=mpv.desktop
+audio/mp4=mpv.desktop
+audio/x-wav=mpv.desktop
+audio/aac=mpv.desktop

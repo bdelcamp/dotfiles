@@ -19,7 +19,6 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvtc
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+q kill
-# bindsym $mod+d exec dmenu_run -nf '#666666' -nb '#222222' -sf '#B5BD68' -sb '#222222'
 bindsym $mod+space exec rofi -show run 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -44,7 +43,7 @@ bindsym --release Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/screensh
 
 set $ws1 1: irc
 set $ws2 2: www
-set $ws3 3: code
+set $ws3 3: art
 set $ws4 4: code
 set $ws5 5: code
 set $ws6 6: code
@@ -152,8 +151,8 @@ bar {
 
 #color			border  backgr. text	indicator
 client.focused 		#B5BD68 #B5BD68 #ffffff #B5BD68
-client.focused_inactive #131313 #131313 #888888 #131313
-client.unfocused 	#131313 #131313 #888888 #131313
+client.focused_inactive #222222 #222222 #888888 #222222
+client.unfocused 	#222222 #222222 #888888 #222222
 client.urgent 		#CC6666 #CC6666 #ffffff #CC6666
 
 #######################################################################
