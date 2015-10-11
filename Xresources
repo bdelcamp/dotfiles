@@ -7,6 +7,7 @@ URxvt.url-launcher: firefox
 URxvt.url-select.launcher: firefox
 URxvt.matcher.button: 1
 URxvt*scrollBar: false
+URxvt.cursorUnderline: true
 !URxvt*cursorBlink: true
 
 URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,matcher
@@ -26,8 +27,10 @@ URxvt.keysym.M-c:   perl:clipboard:copy
 URxvt.keysym.M-v:   perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
 ! terminal colors ------------------------------
-URxvt*background: [95]#131313
+URxvt*background: [85]#131313
 *foreground: #C5C8C6
 ! black
 *color0: #282A2E

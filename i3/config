@@ -134,14 +134,14 @@ bar {
 	position top
 	separator_symbol " "
         colors {
-                background #333333
-                separator  #666666
+                background #191919
+                separator  #444444
                 statusline #eeeeee
 
-                focused_workspace  #333333 #333333 #eeeeee
-                active_workspace   #333333 #333333 #999999
-                inactive_workspace #333333 #333333 #666666
-                urgent_workspace   #333333 #333333 #CC6666
+                focused_workspace  #191919 #191919 #eeeeee
+                active_workspace   #191919 #191919 #999999
+                inactive_workspace #191919 #191919 #444444
+                urgent_workspace   #191919 #191919 #CC6666
         }
 }
 
@@ -151,8 +151,8 @@ bar {
 
 #color			border  backgr. text	indicator
 client.focused 		#B5BD68 #B5BD68 #ffffff #B5BD68
-client.focused_inactive #222222 #222222 #888888 #222222
-client.unfocused 	#222222 #222222 #888888 #222222
+client.focused_inactive #131313 #131313 #888888 #131313
+client.unfocused 	#131313 #131313 #888888 #131313
 client.urgent 		#CC6666 #CC6666 #ffffff #CC6666
 
 #######################################################################
