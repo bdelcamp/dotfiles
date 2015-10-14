@@ -87,6 +87,5 @@ rofi.fg: argb:FFEEEEEE
 rofi.hlbg: argb:FF131313
 rofi.hlfg: argb:FFB5BD68
 rofi.disable-history: true
-rofi.sidebar-mode: true
 rofi.modi: window,run
 

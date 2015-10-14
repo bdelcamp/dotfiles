@@ -2,10 +2,13 @@
 
 nnoremap K <gt>
 nnoremap J <gT>
-set gui=tabs
+set gui=none
 set animations
 colorscheme indigo
 set hintchars=hjklasdfgyuiopqwertnmzxcvb
+set maxitems=10
+set followhints=1
+map B :bmarks! 
 
 hi CompItem font-family: drift;
 hi CmdLine>* font-family: drift;
@@ -17,3 +20,4 @@ hi ModeMsg color: #555555; background: #1c1c1c; font-family: drift; padding-left
 hi ErrorMsg color: #ffffff; background: #440000; font-family: drift;
 hi InfoMsg color: #d0d0d0; background: #1c1c1c; font-family: drift;
 hi PromptText color: #d0d0d0; background: transparent; font-family: drift; padding-top: 5px; padding-bottom: 5px;
+
