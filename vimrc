@@ -39,7 +39,7 @@ Plugin 'w0ng/vim-hybrid'
 " ---------------------END PLUGINS-------------------
 call vundle#end()            " required
 filetype plugin indent on    " required
- Put your non-Plugin stuff after this line
+" Put your non-Plugin stuff after this line
 " -----------------------CONFIG----------------------
 
 syntax on
