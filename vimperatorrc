@@ -8,6 +8,7 @@ colorscheme indigo
 set hintchars=hjklasdfgyuiopqwertnmzxcvb
 set maxitems=10
 set followhints=1
+set titlestring="Mozilla Firefox"
 map B :bmarks! 
 
 hi CompItem font-family: drift;

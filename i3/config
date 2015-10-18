@@ -80,26 +80,26 @@ bindsym $mod+Shift+0 move container to workspace $ws0
 #######################################################################
 
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+	# These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+	# Pressing left will shrink the window’s width.
+	# Pressing right will grow the window’s width.
+	# Pressing up will shrink the window’s height.
+	# Pressing down will grow the window’s height.
+	bindsym j resize shrink width 10 px or 10 ppt
+	bindsym k resize grow height 10 px or 10 ppt
+	bindsym l resize shrink height 10 px or 10 ppt
+	bindsym semicolon resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+	# same bindings, but for the arrow keys
+	bindsym Left resize shrink width 10 px or 10 ppt
+	bindsym Down resize grow height 10 px or 10 ppt
+	bindsym Up resize shrink height 10 px or 10 ppt
+	bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+	# back to normal: Enter or Escape
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -122,6 +122,15 @@ mode "$mode_system" {
 
 bindsym $mod+Shift+e mode "$mode_system"
 
+set $mode_launch Launch (f) firefox, (p) pcmanfm
+mode "$mode_launch" {
+	bindsym f exec firefox ; mode "default"
+	bindsym p exec pcmanfm ; mode "default"
+	
+
+	bindsym Escape mode "default"
+}
+bindsym $mod+Tab mode "$mode_launch"
 #######################################################################
 #                                 bar                                 #
 #######################################################################
@@ -150,7 +159,8 @@ bar {
 #######################################################################
 
 #color			border  backgr. text	indicator
-client.focused 		#B5BD68 #B5BD68 #ffffff #B5BD68
+# client.focused 		#B5BD68 #B5BD68 #ffffff #B5BD68
+client.focused 	    #131313 #131313 #888888 #131313
 client.focused_inactive #131313 #131313 #888888 #131313
 client.unfocused 	#131313 #131313 #888888 #131313
 client.urgent 		#CC6666 #CC6666 #ffffff #CC6666
@@ -162,8 +172,8 @@ client.urgent 		#CC6666 #CC6666 #ffffff #CC6666
 for_window [class="^.*"] border pixel 3
 # smart_borders no_gaps
 # smart_gaps on
-gaps inner 7
-gaps outer 3
+gaps inner 12
+gaps outer 0
 
 #######################################################################
 #                           audio bindings                            #
