@@ -1,4 +1,4 @@
-# dotfiles
+#dotfiles
 This is just a spot for me to upload all of my config files.
 
 The ones here include my i3 config files, my Xdefaults, compton.conf, and a few more.
@@ -9,3 +9,9 @@ clone the repository with "git clone https://github.com/hexadecimal-rainbow/dotf
 Make sure you have airblader's i3-gaps installed, as well as i3blocks.
 
 installing the latest version of rofi is also recommended, though if you prefer you can use dmenu. Just edit the i3/config file if that's the case.
+
+for the dwm stuff, copy the config.h and dwm.c into your dwm folder. make sure you install these patchesusing "patch < patchname.diff":
+
+fibonacci, gapless grid, pertag, and uselessgap
+
+Once you apply the patches, use "make && sudo make install"
