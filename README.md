@@ -15,3 +15,4 @@ for the dwm stuff, copy the config.h and dwm.c into your dwm folder. make sure y
 fibonacci, gapless grid, pertag, and uselessgap
 
 Once you apply the patches, use "make && sudo make install"
+do the same for dwmstatus, and uncomment dwmstatus in the xinitrc

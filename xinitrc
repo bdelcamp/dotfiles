@@ -21,7 +21,7 @@ nitrogen --restore &
 mpd &
 compton & 
 
-dwmstatus &
+# dwmstatus &
 
 # exec dwm
 exec i3
