@@ -22,6 +22,10 @@ mpd &
 compton & 
 
 # dwmstatus &
+while true; do
+		xsetroot -name "$( mpc current )   VOL - $( amixer get Master | tail -1 | sed 's/.*\[\([0-9]*%\)\].*/\1/' )   DATE - $( date +"%F" )   TIME - $( date +"%R" )"
+	sleep 1s
+done &
 
-# exec dwm
-exec i3
+exec dwm
+# exec i3
