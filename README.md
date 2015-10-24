@@ -12,9 +12,3 @@ Make sure you have airblader's i3-gaps installed, as well as i3blocks.
 
 installing the latest version of rofi is also recommended, though if you prefer you can use dmenu. Just edit the i3/config file if that's the case.
 
-for the dwm stuff, copy the config.h and dwm.c into your dwm folder. make sure you install these patchesusing "patch < patchname.diff":
-
-fibonacci, gapless grid, pertag, and uselessgap
-
-Once you apply the patches, use "make && sudo make install"
-do the same for dwmstatus, and uncomment dwmstatus in the xinitrc
