@@ -20,12 +20,12 @@ xmodmap ~/.capswap &
 nitrogen --restore &
 mpd &
 compton & 
+xautolock -time 3 -detectsleep -locker ~/.blurlock &
 
 # dwmstatus &
 while true; do
-		xsetroot -name "$( mpc current )   VOL - $( amixer get Master | tail -1 | sed 's/.*\[\([0-9]*%\)\].*/\1/' )   DATE - $( date +"%F" )   TIME - $( date +"%R" )"
+		xsetroot -name "$( mpc current )   VOL - $( amixer get Master | tail -1 | sed 's/.*\[\([0-9]*%\)\].*/\1/' )   DATE - $( date +"%F" )   TIME - $( date +"%I:%M %p" )"
 	sleep 1s
 done &
-
 exec dwm
 # exec i3

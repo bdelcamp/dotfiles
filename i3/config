@@ -136,7 +136,7 @@ bindsym $mod+Tab mode "$mode_launch"
 #######################################################################
 
 bar {
-        height 20
+        # height 20
 	font pango:drift,tewi 8
 	status_command i3blocks -c ~/.i3/i3blocks.conf
 	tray_output none

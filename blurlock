@@ -1,0 +1,20 @@
+#!/bin/bash
+ 
+# Dependencies:
+# imagemagick
+# i3lock-color-git
+# scrot
+ 
+IMAGE=/tmp/i3lock.png
+ 
+# All options are here: http://www.imagemagick.org/Usage/blur/#blur_args
+BLURTYPE="0x5" # 7.52s
+# BLURTYPE="0x2" # 4.39s
+# BLURTYPE="5x3" # 3.80s
+# BLURTYPE="2x8" # 2.90s
+# BLURTYPE="2x3" # 2.92s
+
+scrot $IMAGE
+convert $IMAGE -brightness-contrast "-30,-30" -blur $BLURTYPE - | composite -gravity center .lock.png - $IMAGE
+i3lock -i $IMAGE -u
+rm $IMAGE

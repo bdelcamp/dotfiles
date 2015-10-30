@@ -1,6 +1,6 @@
 ! HYBRID COLOR SCHEME AND OTHER STUFF
 ! urxvt
-URxvt.depth: 32
+/* URxvt.depth: 32 */
 URxvt*geometry:         122x32
 URxvt*font:            xft:tewi:size=8
 URxvt.url-launcher: firefox
@@ -31,8 +31,8 @@ URxvt.secondaryScroll: 0
 ! terminal colors ------------------------------
 
 URxvt*fading: 60
-URxvt*fadeColor: [90]#131313
-URxvt*background: [90]#131313
+URxvt*fadeColor: #131313
+URxvt*background: #131313
 *foreground: #C5C8C6
 ! black
 *color0: #282A2E
@@ -63,17 +63,15 @@ URxvt*background: [90]#131313
 *colorBD: #d7d7d7
 *colorUL: #87afd7
 ! ROFI
-rofi.opacity: 85
-/* rofi.lines: 8 */
-rofi.width: 100
+rofi.opacity: 100
+rofi.width: 20
+rofi.padding: 50
 rofi.separator-style: none
 rofi.fixed_num_lines: 1
 rofi.line-margin: 0
-rofi.padding: 550
 rofi.hide-scrollbar: true
 rofi.terminal: urxvtc
 rofi.bw: 0
-/* rofi.bc: argb:FF121212 */
 rofi.font: tewi 8
 rofi.hlbg-active: argb:FF131313
 rofi.hlfg-active: argb:FFB5BD68
@@ -83,8 +81,6 @@ rofi.hlbg-urgent: argb:FF131313
 rofi.hlfg-urgent: argb:FFB5BD68
 rofi.bg-urgent: argb:FF131313
 rofi.fg-urgent: argb:FFEEEEEE
-
-rofi.eh: 1
 rofi.bg: argb:FF131313
 rofi.fg: argb:FFEEEEEE
 rofi.hlbg: argb:FF131313
