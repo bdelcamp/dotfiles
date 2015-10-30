@@ -12,3 +12,4 @@ Make sure you have airblader's i3-gaps installed, as well as i3blocks.
 
 installing the latest version of rofi is also recommended, though if you prefer you can use dmenu. Just edit the i3/config file if that's the case.
 
+for the lockscreen, make sure you have i3lock, xautolock, scrot, and imagemagick installed, and add the blurlock and lock.png to your home directory as .blurlock and .lock.png (It's the way I've found to work best)
