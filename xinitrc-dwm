@@ -19,6 +19,11 @@ xrdb -load ~/.Xresources &
 xmodmap ~/.capswap &
 nitrogen --restore &
 mpd &
-compton & 
+compton &
 
-exec awesome
+dwmstatus &
+while true; do
+	xsetroot -name "$( mpc current )   VOL - $( amixer get Master | tail -1 | sed 's/.*\[\([0-9]*%\)\].*/\1/' )   DATE - $( date +"%F" )   TIME - $( date +"%I:%M %p" )"
+	sleep 1s
+done &
+exec dwm

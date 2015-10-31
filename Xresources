@@ -1,6 +1,6 @@
 ! HYBRID COLOR SCHEME AND OTHER STUFF
 ! urxvt
-/* URxvt.depth: 32 */
+URxvt.depth: 32
 URxvt*geometry:         122x32
 URxvt*font:            xft:tewi:size=8
 URxvt.url-launcher: firefox
@@ -30,9 +30,9 @@ URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
 ! terminal colors ------------------------------
 
-URxvt*fading: 60
-URxvt*fadeColor: #131313
-URxvt*background: #131313
+/* URxvt*fading: 60 */
+/* URxvt*fadeColor: [90]#131313 */
+URxvt*background: [85]#131313
 *foreground: #C5C8C6
 ! black
 *color0: #282A2E

@@ -19,6 +19,6 @@ xrdb -load ~/.Xresources &
 xmodmap ~/.capswap &
 nitrogen --restore &
 mpd &
-compton & 
+compton &
 
-exec awesome
+exec i3
