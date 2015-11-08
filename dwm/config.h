@@ -69,8 +69,8 @@ static const char *termcmd[]   = { "urxvtc", NULL };
 static const char *mpdtoggle[] = { "mpc", "toggle", NULL};
 static const char *mpdnext[]   = {"mpc", "next", NULL};
 static const char *mpdprev[]   = {"mpc", "prev", NULL};
-static const char *volumedown[] = { "amixer", "-q", "set", "Master", "2%-", "unmute", NULL };
-static const char *volumeup[]   = { "amixer", "-q", "set", "Master", "2%+", "unmute", NULL };
+static const char *volumedown[] = { "amixer", "-q", "set", "Master", "1%-", "unmute", NULL };
+static const char *volumeup[]   = { "amixer", "-q", "set", "Master", "1%+", "unmute", NULL };
 static const char *mute[]       = { "amixer", "-q", "set", "Master", "toggle", NULL };
 static const char *lockscreen[] = { "xautolock", "-locknow", NULL};
 
